@@ -1,0 +1,23 @@
+{
+	"name": "mdns",
+	"version": "0.1.0",
+	"description": "",
+	"license": "MIT",
+	"author": "",
+	"type": "module",
+	"main": "src/main.ts",
+	"scripts": {
+		"build": "npx ncc build src/main.ts -o dist -m",
+		"start": "node --disable-warning=ExperimentalWarning src/main.ts"
+	},
+	"dependencies": {
+		"dotenv": "^16.5.0",
+		"exit-hook": "^4.0.0",
+		"multicast-dns": "^7.2.5"
+	},
+	"devDependencies": {
+		"@types/node": "^22.15.15",
+		"@vercel/ncc": "^0.38.3",
+		"typescript": "^5.8.3"
+	}
+}
